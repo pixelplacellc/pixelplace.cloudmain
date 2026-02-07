@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Place LLC | Cybersecurity & IT Services</title>
+  <meta name="description" content="Penetration testing, managed IT support, and web design by experts with 20+ years of experience." />
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #12182b;
+      --accent: #5eead4;
+      --accent-2: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #0b0f1a, #020617);
+      color: var(--text);
+    }
+    header {
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      margin-bottom: 1rem;
+    }
+    header p {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .cta {
+      display: inline-block;
+      padding: 0.9rem 1.4rem;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: #020617;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 1rem;
+      padding: 1.75rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .about p { color: var(--muted); }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid #1f2937;
+    }
+    @media (max-width: 768px) {
+      .about { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Pixel Place LLC</h1>
+  <p>Elite cybersecurity, managed IT support, and modern web design — led by professionals with over <strong>20 years of real-world experience</strong>.</p>
+  <a class="cta" href="#contact">Request a Consultation</a>
+</header>
+
+<section>
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Penetration Testing</h3>
+      <p>Web, API, and infrastructure security testing focused on real attacker behavior, business logic flaws, and actionable remediation.</p>
+    </div>
+    <div class="card">
+      <h3>Managed IT Support</h3>
+      <p>Remote-first IT support including cloud, networking, endpoint security, monitoring, and incident response.</p>
+    </div>
+    <div class="card">
+      <h3>Web Design & Development</h3>
+      <p>Fast, secure, and modern websites built with performance, usability, and security in mind.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Pixel Place LLC</h2>
+  <div class="about">
+    <div>
+      <p>Our lead consultant brings over two decades of experience across enterprise IT, cybersecurity, networking, and systems engineering.</p>
+      <p>We combine offensive security thinking with operational experience, ensuring recommendations that actually work in production.</p>
+    </div>
+    <div class="card">
+      <h3>Our Approach</h3>
+      <p>✔ Real-world attack simulations</p>
+      <p>✔ Clear, executive-ready reports</p>
+      <p>✔ Practical fixes, not theory</p>
+      <p>✔ Long-term partnership mindset</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Get in Touch</h2>
+  <div class="card">
+    <p>Email: <strong>support@pixelplace.cloud</strong></p>
+    <p>Phone: <strong>754.291.4002</strong></p>
+    <p>Remote services available worldwide.</p>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Pixel Place LLC. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
